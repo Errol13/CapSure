@@ -42,8 +42,8 @@ return [
             'prefix' => '',
             'foreign_key_constraints' => env('DB_FOREIGN_KEYS', true),
         ],
-
-       'mysql' => [
+    
+ 'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
             'database' => env('DB_DATABASE', 'forge'),
@@ -59,7 +59,7 @@ return [
             'options' => extension_loaded('pdo_mysql') ? array_filter([
                 PDO::MYSQL_ATTR_SSL_CA => env('MYSQL_ATTR_SSL_CA'),
             ]) : [],
-        ],
+    ],
 
         'pgsql' => [
             'driver' => 'pgsql',
