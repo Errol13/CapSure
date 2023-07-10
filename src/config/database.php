@@ -49,7 +49,7 @@ return [
             'database' => env('DB_DATABASE', 'forge'),
             'username' => env('DB_USERNAME', 'forge'),
             'password' => env('DB_PASSWORD', ''),
-            'unix_socket' =>env('UNIX_SOCKET','/cloud_sql/team-tem:asia-southeast1:capsuredb'),
+            'unix_socket' =>'/cloud_sql/team-tem:asia-southeast1:capsuredb',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
