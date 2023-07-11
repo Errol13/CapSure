@@ -49,7 +49,7 @@ return [
             'database' => 'capsuredb',
             'username' =>'root',
             'password' => 'Pv=DC9yLcATg@72&',
-            'unix_socket' =>'/cloud_sql/team-tem:asia-southeast1:capsuredb',
+            'unix_socket' =>'/cloudsql/team-tem:asia-southeast1:capsuredb',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
             'prefix' => '',
