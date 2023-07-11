@@ -126,7 +126,7 @@
                             <label for="fee" class="col-md-4 col-form-label text-md-end">{{ __('Fee') }}</label>
 
                             <div class="col-md-6">
-                            <input id="fee" type="text" class="form-control @error('fee') is-invalid @enderror" name="fee" value="" placeholder="Enter Commission Fee" required autocomplete="new-fee">
+                            <input id="fee" type="text" class="form-control @error('fee') is-invalid @enderror" name="fee" value="{{ $user->profile->fee }}" placeholder="Enter Commission Fee" required autocomplete="new-fee">
 
                                 @error('fee')
                                 <span class="invalid-feedback" role="alert">
@@ -143,7 +143,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <select id="availability" class="form-control @error('availability') is-invalid @enderror" name="availability" value="" autocomplete="new-availability">
-                                        <option value="" selected disabled>Select Availability</option>
+                                        <option value="" selected disabled>{{ $user->profile->availability }}</option>
                                         <option value="Available">Available</option>
                                         <option value="Not Available">Not Available</option>
                                     </select>
