@@ -46,9 +46,9 @@ return [
  'mysql' => [
             'driver' => 'mysql',
             'url' => env('DATABASE_URL'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'database' => 'capsuredb',
+            'username' =>'root',
+            'password' => 'Pv=DC9yLcATg@72&',
             'unix_socket' =>'/cloud_sql/team-tem:asia-southeast1:capsuredb',
             'charset' => 'utf8mb4',
             'collation' => 'utf8mb4_unicode_ci',
