@@ -186,7 +186,7 @@ body{
     box-shadow: 0 0 5px 5px rgba(13, 6, 31, 0.13);
 }
 .ltr-spng{
-   letter-spacing: 0.3em;
+   letter-spacing: 0.1em;
 }
 .carousel-size{
     width: 670px;

@@ -27,7 +27,7 @@ class ServicesController extends Controller
             $query->where('user_type', $user_type);
         });
 
-        $users = $query->paginate(3);
+        $users = $query->paginate(20);
 
         $users->appends(['user_type' => $user_type]); // Append the user_type parameter to the pagination links
 
