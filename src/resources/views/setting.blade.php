@@ -143,7 +143,7 @@
                             <div class="col-md-6">
                                 <div class="input-group">
                                     <select id="availability" class="form-control @error('availability') is-invalid @enderror" name="availability" value="" autocomplete="new-availability">
-                                        <option value="" selected disabled>{{ $user->profile->availability }}</option>
+                                        <option value="" selected disabled>Select Availability</option>
                                         <option value="Available">Available</option>
                                         <option value="Not Available">Not Available</option>
                                     </select>
