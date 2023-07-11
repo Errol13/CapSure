@@ -33,10 +33,10 @@ class UserSeeder extends Seeder
 
         User::create([
             'id' => 2,
-            'name' => "Errol John Celis",
-            'email' => "ecelis@gbox.adnu.edu.ph",
+            'name' => "Leah Mondragon",
+            'email' => "leah@gbox.adnu.edu.ph",
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('errolpassword'),
+            'password' => Hash::make('leahpassword'),
             'user_type' => 'Customer',
             'contact'=> "09123456689",
             'address' => "Zone-3 Sta.Cruz, Naga City, Camarines Sur",
@@ -45,8 +45,8 @@ class UserSeeder extends Seeder
 
         User::create([
             'id' => 3,
-            'name' => "Earl John Celis",
-            'email' => "ercelis@gbox.adnu.edu.ph",
+            'name' => "Earl John Cruz",
+            'email' => "earlcruz@gbox.adnu.edu.ph",
             'email_verified_at' => Carbon::now(),
             'password' => Hash::make('earlpassword'),
             'user_type' => 'Photographer',
@@ -59,10 +59,10 @@ class UserSeeder extends Seeder
 
         User::create([
             'id' => 4,
-            'name' => "Errol Jay Celis",
-            'email' => "ejcelis@gbox.adnu.edu.ph",
+            'name' => "Vivian Syndrome",
+            'email' => "vivian@gmail.com",
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('errolpassword'),
+            'password' => Hash::make('vivianpassword'),
             'user_type' => 'Studio Owner',
             'contact'=> "09123456689",
             'address' => "Zone-3 Sta.Cruz, Naga City, Camarines Sur",
@@ -71,10 +71,10 @@ class UserSeeder extends Seeder
         ]);
         User::create([
             'id' => 5,
-            'name' => "Errol Jayce Celis",
-            'email' => "errcelis@gbox.adnu.edu.ph",
+            'name' => "John Wick",
+            'email' => "johnwick@gmail.com",
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('errolpassword'),
+            'password' => Hash::make('wickpassword'),
             'user_type' => 'Studio Owner',
             'contact'=> "09123456689",
             'address' => "Zone-3 Sta.Cruz, Naga City, Camarines Sur",
@@ -83,10 +83,10 @@ class UserSeeder extends Seeder
         ]);
         User::create([
             'id' => 6,
-            'name' => "Errol Jamae Celis",
-            'email' => "ejacelis@gbox.adnu.edu.ph",
+            'name' => "Tony Stark",
+            'email' => "tony@gmail.com",
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('errolpassword'),
+            'password' => Hash::make('tonypassword'),
             'user_type' => 'Studio Owner',
             'contact'=> "09123456689",
             'address' => "Zone-3 Sta.Cruz, Naga City, Camarines Sur",
@@ -96,9 +96,9 @@ class UserSeeder extends Seeder
         User::create([
             'id' => 7,
             'name' => "Elden Jami Cruz",
-            'email' => "ejamicelis@gbox.adnu.edu.ph",
+            'email' => "ejami@gmail.com",
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('errolpassword'),
+            'password' => Hash::make('eldenpassword'),
             'user_type' => 'Studio Owner',
             'contact'=> "09123456689",
             'address' => "Zone-3 Sta.Cruz, Naga City, Camarines Sur",
@@ -107,10 +107,10 @@ class UserSeeder extends Seeder
         ]);
         User::create([
             'id' => 8,
-            'name' => "Earl James Celis",
-            'email' => "earljcelis@gbox.adnu.edu.ph",
+            'name' => "Ichigo Kurosaki",
+            'email' => "ichinisan@gmail.com",
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('errolpassword'),
+            'password' => Hash::make('ichipassword'),
             'user_type' => 'Studio Owner',
             'contact'=> "09123456689",
             'address' => "Zone-3 Sta.Cruz, Naga City, Camarines Sur",
@@ -119,10 +119,10 @@ class UserSeeder extends Seeder
         ]);
         User::create([
             'id' => 9,
-            'name' => "Xavier D. Santiago",
-            'email' => "xsantiago@gbox.adnu.edu.ph",
+            'name' => "Daiguren Hyourinmaru",
+            'email' => "dragon@gmail.com",
             'email_verified_at' => Carbon::now(),
-            'password' => Hash::make('errolpassword'),
+            'password' => Hash::make('daigurenpassword'),
             'user_type' => 'Photographer',
             'contact'=> "09123456689",
             'address' => "Zone-3 Sta.Cruz, Naga City, Camarines Sur",

@@ -17,7 +17,7 @@ class ProfileSeeder extends Seeder
         Profile::create([
             'user_id' => 1,
             'project_count' => 23,
-            'fee' => "1,400",
+            'fee' => "60",
             'availability' => "Available",
         ]);
         
@@ -31,49 +31,49 @@ class ProfileSeeder extends Seeder
         Profile::create([
             'user_id' => 3,
             'project_count' => 14,
-            'fee' => "1,400",
+            'fee' => "80",
             'availability' => "Available",
         ]);
 
         Profile::create([
             'user_id' => 4,
             'project_count' => 3,
-            'fee' => "1,400",
+            'fee' => "40",
             'availability' => "Not Available",
         ]);
 
         Profile::create([
             'user_id' => 5,
             'project_count' => 3,
-            'fee' => "1,400",
+            'fee' => "100",
             'availability' => "Not Available",
         ]);
 
         Profile::create([
             'user_id' => 6,
             'project_count' => 3,
-            'fee' => "1,400",
+            'fee' => "30",
             'availability' => "Available",
         ]);
 
         Profile::create([
             'user_id' => 7,
             'project_count' => 3,
-            'fee' => "1,400",
+            'fee' => "70",
             'availability' => "Not Available",
         ]);
 
         Profile::create([
             'user_id' => 8,
             'project_count' => 3,
-            'fee' => "1,400",
+            'fee' => "70",
             'availability' => "Available",
         ]);
 
         Profile::create([
             'user_id' => 9,
             'project_count' => 3,
-            'fee' => "1,400",
+            'fee' => "120",
             'availability' => "Not Available",
         ]);
     }

@@ -34,7 +34,7 @@
                         <img class="text-center avatar-ser" src="{{ asset('/img/' . $user->avatar) }}">
                         <h5 class="mt-2 card-title"><strong>{{ $user->name }}</strong></h5>
                         Project Count: <strong>{{ $user->profile ? $user->profile->project_count : null }}</strong><br />
-                        Commission Fee: <strong>P{{ $user->profile ? $user->profile->fee : null }}</strong>
+                        Commission Fee: <strong>P{{ $user->profile ? $user->profile->fee : null }}/hr</strong>
                         @if ($user->profile && $user->profile->availability == "Available")
                         <p class="card-text"><strong class="avl-color">{{ $user->profile->availability }}</strong></p>
                         @else
