@@ -11,7 +11,7 @@
   </div>
 
   <div class="container my-4">
-    <table class="table table-bordered border-black">
+    <table class="table  border-black">
       <thead>
         <tr class="table-brd-clr text-white text-center">
           <th scope="col" class="column-cus_name">Client/Agent Name</th>
@@ -22,7 +22,7 @@
           <th scope="col" class="column-actions">Actions</th>
         </tr>
       </thead>
-      <tbody class="text-center">
+      <tbody class="text-center ">
         @if(count($appointments) === 0)
         <td colspan="6" class="text-muted fs-5 ">No Appointment</td>
 
@@ -36,8 +36,8 @@
           <td>{{$appointment->start_time}}</td>
           <td>
             <div class="row text-center">
-              <div class="col-md-1 me-3">
-                <a href="/appointment/edit/{{$appointment->id}}" class="btn btn-aqua edit-button" type="button">Edit</a>
+              <div class="col-md-1 me-2 ms-3">
+                <a href="/appointment/edit/{{$appointment->id}}" class="btn btn-aqua" type="button"><i class="bi bi-pencil"></i> </a>
               </div>
 
 
@@ -46,7 +46,7 @@
                 <form action="{{ route('appointment.delete', $appointment->id) }}" method="POST" onsubmit="return confirm('Are you sure you want to delete this appointment?');">
                   @csrf
                   @method('DELETE')
-                  <button class="btn btn-red" type="submit">Del</button>
+                  <button class="btn btn-red" type="submit"><i class="bi bi-trash"></i></button>
                 </form>
               </div>
             </div>

@@ -182,7 +182,7 @@
                         <!-- Submit button -->
                         <div class="row">
                             <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
+                            <button type="submit" class="btn btn-aqua">
                                     {{ __('Save') }}
                                 </button>
                             </div>

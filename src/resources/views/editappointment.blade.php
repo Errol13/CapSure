@@ -34,7 +34,7 @@
       </div>
       <div class="form-row">
         <div class="form-group col-md-12">
-          <button type="button" class="btn btn-secondary me-1 mt-2 cancel-button" data-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-secondary me-1 mt-2 cancel-button" onclick="window.history.back();">Cancel</button>
           <button type="submit" class="btn btn-primary mt-2">Update</button>
         </div>
       </div>

@@ -85,7 +85,7 @@ body{
     font-weight: 33px;
 }
 .navbar-nav .active{
-    border-bottom: #FFF61F solid 3px;
+    border-bottom: #073535 solid 3px;
 }
 
 .loginbutton{
@@ -337,6 +337,11 @@ body{
 
 .content-st{
     margin-bottom: -100px;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #023047;
+  
 }
 
 /*Event*/
