@@ -180,7 +180,7 @@ body{
     opacity: 12%;
 }
 .opac-0{
-    border-radius: 25%;
+    border-radius: 75%;
 }
 .excess-sdw{
     box-shadow: 0 0 5px 5px rgba(13, 6, 31, 0.13);
