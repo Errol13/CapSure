@@ -13,7 +13,10 @@
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img src="../img/pe.jpg" class="d-block w-100" alt="..." style="position: absolute;
-    background-size: cover;">
+    background-size: cover;
+    top: 0;
+    left: 0;
+    height: 550px;">
       <div class="carousel-caption d-none d-md-block bg-dark text-white" style="--bs-bg-opacity: .5;">
         <h5>Photograpy Exhibition</h5>
         <p>Some representative placeholder content for the first slide.</p>
