@@ -8,7 +8,7 @@
 <img src="../img/pe.jpg" class="card-img-top" alt="..." style="height: 380px; width: 100%; object-fit: cover;">
 <div class="card-body">
 <h5>Photograpy Exhibition</h5>
-<p>Some representative placeholder content for the first slide.</p>
+<p>Come join Alex Babineaux's Photograpy Exhibition!</p>
 <a href="#" class="btn btn-primary">Learn More</a>
 </div>
 </div>
@@ -22,7 +22,7 @@
 <img src="../img/30.png" class="card-img-top" alt="..." style="height: 380px; width: 100%; object-fit: cover;">
 <div class="card-body">
 <h5>30% OFF!</h5>
-<p>Some representative placeholder content for the first slide.</p>
+<p>Get 30% OFF on your first booking.</p>
 <a href="#" class="btn btn-primary">Book Now</a>
 </div>
 </div>
@@ -36,7 +36,7 @@
 <img src="../img/camera.jpg" class="card-img-top" alt="..." style="height: 380px; width: 100%; object-fit: cover;">
 <div class="card-body">
 <h5>Camera Giveaway</h5>
-<p>Some representative placeholder content for the first slide.</p>
+<p>Are you an aspiring photographer? Then this camera might be yours.</p>
 <a href="#" class="btn btn-primary">Join Now</a>
 </div>
 </div>
