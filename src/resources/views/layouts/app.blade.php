@@ -338,6 +338,10 @@ body{
     padding-bottom: 145px;
 }
 
+.pdng-cntnt{
+    padding-bottom: 100px;
+}
+
 .img-up{
     max-width:100%;
     height:auto;
