@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Left column -->
-        <div class="col-md-3 bg-light border border-black">
+        <div class="col-md-3 bg-light">
             <form action="/avatar/update/{{$user->id}}" method="POST" enctype="multipart/form-data" id="avatar-form">
                 @csrf
                 <!-- Avatar -->
@@ -37,7 +37,7 @@
         <!-- Right column -->
         <div class="col-md-9">
             <!-- Tab content -->
-            <div class="tab-content bg-setting  border border-black">
+            <div class="tab-content bg-setting ">
                 <!-- Profile form -->
                 <div class="tab-pane fade show active mt-3" id="profile-form">
                     <form method="POST" action="/profile/update/{{$user->id}}">
