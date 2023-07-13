@@ -11,7 +11,7 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
   </div>
   <div class="carousel-inner">
-    <div class="carousel-item active">
+    <div class="carousel-item active" style="position: absolute; object-fit: cover; top: 0; left: 0; height: 550px;">
       <img src="../img/pe.jpg" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block bg-dark text-white" style="--bs-bg-opacity: .5;">
         <h5>Photograpy Exhibition</h5>

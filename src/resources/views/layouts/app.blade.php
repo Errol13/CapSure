@@ -384,12 +384,7 @@ body{
   height: 550px;
 }
 
-.carousel-item img {
-    
-    top: 0;
-    left: 0;
-    height: 550px;
-}
+
 
   /*Service*/
   .avatar-ser{
