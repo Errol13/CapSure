@@ -41,7 +41,7 @@
         <!-- Right column -->
         <div class="col-md-9">
             <!-- Tab content -->
-            <div class="tab-content  bg-setting brdr-clr-ltaqua">
+            <div class="tab-content  bg-setting brdr-clr-ltaqua pdng-cntnt">
                 <!-- Profile form -->
                 <div class="tab-pane fade show active mt-5" id="profile-form">
                     <form method="POST" action="/profile/update/{{$user->id}}">
@@ -159,7 +159,7 @@
                 </div>
 
                 <!-- Project Profile form -->
-                <div class="tab-pane fade mt-5" id="project-profile-form">
+                <div class="tab-pane fade mt-5  pdng-cntnt" id="project-profile-form">
                     <form method="POST" action="/profile/update/{{$user->id}}">
                         @csrf
                         <div class="row mb-3">
@@ -228,7 +228,7 @@
                 @if($user->user_type!="Customer")
                 <!-- Portfolio form -->
                 <div class="tab-pane fade" id="portfolio-form">
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center  pdng-cntnt">
                         <form action="/portfolio/add" method="POST" enctype="multipart/form-data" class="col-lg-6">
                             @csrf
                             <div class="mt-3 mb-3">
