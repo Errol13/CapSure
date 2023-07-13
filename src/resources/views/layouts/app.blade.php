@@ -102,10 +102,12 @@ body{
     padding-left: 125px;
     padding-right: 125px;
 }
+
 .fg-m{
-    margin-left: 65px;
-    margin-right: 65px;
+    margin-left: 50px;
+    margin-right: 115px;
 }
+
 .signbutton{
     background-color: #073535;
     color: #ffffff;
@@ -323,23 +325,13 @@ body{
 /*Setting*/
 
 .bg-setting{
-    background-color: #EFEFEF;
-}
-
-.sttng-fnt-size{
-    font-size: small;
-}
-
-.bg-tab{
-    background-color: #EFEFEF;
-}
-
-.pdng-tab{
-    padding-bottom: 145px;
-}
-
-.pdng-cntnt{
-    padding-bottom: 100px;
+    background-color: #c6c5c7;
+    height: 88%;
+    width: 75%;
+    background-size: cover;
+    background-attachment: fixed;
+    position: absolute;
+    
 }
 
 .img-up{
@@ -354,11 +346,6 @@ body{
 .nav-pills .nav-link.active {
     background-color: #023047;
   
-}
-
-.brdr-clr-ltaqua{
-    border: solid #cccccc 1px;
-    border-radius: 1%;
 }
 
 /*Event*/
@@ -395,6 +382,10 @@ body{
     font-family: 'Caveat', serif;
   }
 
+
+
+
+
   /*Service*/
   .avatar-ser{
     width:100px;
@@ -414,7 +405,6 @@ body{
   }
     </style>
  <script src="{{ mix('js/app.js') }}"></script>
- 
 </head>
 <body>
     <div id="app">

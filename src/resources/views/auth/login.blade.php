@@ -4,8 +4,8 @@
 <div class="container lgn-mgn ">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card bor ">
-                <div class="card-header fs-3 bg-white text-center txt-color fw-bold bor2 ltr-spng">{{ __('USER LOGIN') }}</div>
+            <div class="card bor">
+                <div class="card-header fs-3 mt-2 bg-white text-center txt-color fw-bold bor2 ltr-spng">{{ __('USER LOGIN') }}</div>
 
                 <div class="card-body mgn-card">
                     <form method="POST" action="{{ route('login') }}">
@@ -25,7 +25,7 @@
                             </div>
                         </div>
 
-                        <div class="row mb-3">
+                        <div class="row mb-0">
                             <label for="password" class="col-md-4 col-form-label text-md-end"><i class="bi bi-key mx-3 fs-4 fw-bold"></i></label>
 
                             <div class="col-md-6 ">
@@ -40,25 +40,31 @@
                         </div>
 
                         <div class="row mb-3">
-                            <div class="col-md-6 offset-md-4">
-                                <div class="form-check">
+                            <div class="col-md-8 offset-md-4">
+                                <div class="form-check d-flex justify-content-between align-items-center">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
-                                    <label class="form-check-label" for="remember">
-                                        {{ __('Remember me') }}
-                                    </label>
+                                    <div class="text md start">
+                                        <label class="form-check-label rm-b" for="remember">
+                                            {{ __('Remember me') }}
+                                        </label>
+                                    </div>
+
+                                    <div class="text md end">
+                                        @if (Route::has('password.request'))
+                                        <a class="btn btn-link fg-m" href="{{ route('password.request') }}">
+                                            {{ __('Forgot password?') }}
+                                        </a>
+                                        @endif
+                                    </div>
                                 </div>
                             </div>
                         </div>
 
                         <div class="row mb-0">
-                            @if (Route::has('password.request'))
-                            <a class="btn btn-link fg-m" href="{{ route('password.request') }}">
-                                {{ __('Forgot password?') }}
-                            </a>
-                            @endif
-                            <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn loginbutton col-md-9 ">
+                            
+                            <div class="col-md-8 offset-md-4 mt-3">
+                                <button type="submit" class="btn loginbutton col-md-9">
                                     {{ __('Login') }}
                                 </button>
                             </div>
