@@ -100,10 +100,12 @@ class ProfileController extends Controller
         $user->address = $request->input('address', $user->address);
         $user->contact = $request->input('contact', $user->contact);
         $user->user_type = $request->input('user_type', $user->user_type);
+        $user->year_experience = $request->input('year_experience', $user->year_experience);
 
         // Update the profile record with the provided form data
         if ($profile) {
             $profile->fee = $request->input('fee', $profile->fee);
+            $profile->project_count = $request->input('project_count', $profile->project_count);
             $profile->availability = $request->input('availability', $profile->availability);
             $profile->save();
         }

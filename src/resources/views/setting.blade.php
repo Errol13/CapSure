@@ -5,7 +5,7 @@
 <div class="container-fluid">
     <div class="row">
         <!-- Left column -->
-        <div class="col-md-3 bg-light">
+        <div class="col-md-3 bg-tab pdng-tab brdr-clr-ltaqua px-3">
             <form action="/avatar/update/{{$user->id}}" method="POST" enctype="multipart/form-data" id="avatar-form">
                 @csrf
                 <!-- Avatar -->
@@ -21,25 +21,29 @@
             </form>
 
             <!-- Profile navigation -->
-            <ul class="nav flex-column nav-pills mt-4">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#profile-form" data-bs-toggle="tab">Profile</a>
+            <ul class="nav flex-column nav-pills mt-4 ">
+                <li class="nav-item brdr-clr-ltaqua">
+                    <a class="nav-link active" href="#profile-form" data-bs-toggle="tab">Basic Profile</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item mt-1 brdr-clr-ltaqua">
+                    <a class="nav-link" href="#project-profile-form" data-bs-toggle="tab">Professional Details</a>
+                </li>
+                <li class="nav-item mt-1 brdr-clr-ltaqua">
                     <a class="nav-link" href="#portfolio-form" data-bs-toggle="tab">Portfolio</a>
                 </li>
-                <li class="nav-item mt-2">
-                <a class=" ms-3 text-decoration-none fw-bold navl-color" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete Account</a>
+                <li class="nav-item mt-1 brdr-clr-ltaqua py-2">
+                    <a class=" ms-3 text-decoration-none fw-bold navl-color py-4" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete Account</a>
                 </li>
+
             </ul>
         </div>
 
         <!-- Right column -->
         <div class="col-md-9">
             <!-- Tab content -->
-            <div class="tab-content bg-setting ">
+            <div class="tab-content  bg-setting brdr-clr-ltaqua">
                 <!-- Profile form -->
-                <div class="tab-pane fade show active mt-3" id="profile-form">
+                <div class="tab-pane fade show active mt-5" id="profile-form">
                     <form method="POST" action="/profile/update/{{$user->id}}">
                         @csrf
                         <div class="row mb-3">
@@ -121,42 +125,6 @@
                             </div>
                         </div>
 
-                        <!-- Commission Fee -->
-                        <div class="row mb-3">
-                            <label for="fee" class="col-md-4 col-form-label text-md-end">{{ __('Fee') }}</label>
-
-                            <div class="col-md-6">
-                            <input id="fee" type="text" class="form-control @error('fee') is-invalid @enderror" name="fee" value="{{ $user->profile->fee }}" placeholder="Enter Commission Fee" required autocomplete="new-fee">
-
-                                @error('fee')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <!-- Availability -->
-                        <div class="row mb-3">
-                            <label for="availability" class="col-md-4 col-form-label text-md-end">{{ __('Availability') }}</label>
-
-                            <div class="col-md-6">
-                                <div class="input-group">
-                                    <select id="availability" class="form-control @error('availability') is-invalid @enderror" name="availability" value="" autocomplete="new-availability">
-                                        <option value="" selected disabled>Select Availability</option>
-                                        <option value="Available">Available</option>
-                                        <option value="Not Available">Not Available</option>
-                                    </select>
-                                </div>
-
-                                @error('availability')
-                                <span class="invalid-feedback" role="alert">
-                                    <strong>{{ $message }}</strong>
-                                </span>
-                                @enderror
-                            </div>
-                        </div>
-                        
                         <!--Password-->
                         <div class="row mb-3">
                             <label for="password" class="col-md-4 col-form-label text-md-end">{{ __('Password') }}</label>
@@ -182,14 +150,80 @@
                         <!-- Submit button -->
                         <div class="row">
                             <div class="col-md-6 offset-md-4">
-                            <button type="submit" class="btn btn-aqua">
-                                    {{ __('Save') }}
+                                <button type="submit" class="btn btn-aqua">
+                                    {{ __('Save Changes') }}
                                 </button>
                             </div>
                         </div>
                     </form>
                 </div>
 
+                <!-- Project Profile form -->
+                <div class="tab-pane fade mt-5" id="project-profile-form">
+                    <form method="POST" action="/profile/update/{{$user->id}}">
+                        @csrf
+                        <div class="row mb-3">
+                            <label for="project_count" class="col-md-4 col-form-label text-md-end">{{ __('Project Count') }}</label>
+                            <div class="col-md-6">
+                                <input id="project_count" type="text" class="form-control @error('project_count') is-invalid @enderror" name="project_count" value="{{ $user->profile->project_count }}" placeholder="Enter Project Count" required autocomplete="new-project_count">
+                                @error('project_count')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="fee" class="col-md-4 col-form-label text-md-end">{{ __('Fee') }}</label>
+                            <div class="col-md-6">
+                                <input id="fee" type="text" class="form-control @error('fee') is-invalid @enderror" name="fee" value="{{ $user->profile->fee }}" placeholder="Enter Commission Fee" required autocomplete="new-fee">
+                                @error('fee')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="availability" class="col-md-4 col-form-label text-md-end">{{ __('Availability') }}</label>
+                            <div class="col-md-6">
+                                <div class="input-group">
+                                    <select id="availability" class="form-control @error('availability') is-invalid @enderror" name="availability" value="" autocomplete="new-availability">
+                                        <option value="" selected disabled>Select Availability</option>
+                                        <option value="Available">Available</option>
+                                        <option value="Not Available">Not Available</option>
+                                    </select>
+                                </div>
+                                @error('availability')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <label for="year_experience" class="col-md-4 col-form-label text-md-end">{{ __('Years Experience') }}</label>
+                            <div class="col-md-6">
+                                <input id="year_experience" type="text" class="form-control @error('year_experience') is-invalid @enderror" name="year_experience" value="{{ $user->year_experience }}" placeholder="Enter Years Experience" required autocomplete="new-year_experience">
+                                @error('year_experience')
+                                <span class="invalid-feedback" role="alert">
+                                    <strong>{{ $message }}</strong>
+                                </span>
+                                @enderror
+                            </div>
+                        </div>
+
+                        <!-- Submit button -->
+                        <div class="row">
+                            <div class="col-md-6 offset-md-4">
+                                <button type="submit" class="btn btn-aqua">{{ __('Save Changes') }}</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
 
                 @if($user->user_type!="Customer")
                 <!-- Portfolio form -->
@@ -214,31 +248,31 @@
                 @endif
 
 
-               
 
-                    <!-- Delete confirmation modal -->
-                    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <form method="POST" action="/home/delete/{{$user->id }}">
-                                    @csrf
-                                    @method('DELETE')
-                                    <div class="modal-header">
-                                        <h5 class="modal-title" id="deleteModalLabel">Confirm Account Deletion</h5>
-                                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                    </div>
-                                    <div class="modal-body">
-                                        <h2 class="text-center mt-5">Are you sure you want to delete your account?</h2>
-                                    </div>
-                                    <div class="modal-footer">
-                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                                        <button type="submit" class="btn btn-danger">Delete</button>
-                                    </div>
-                                </form>
-                            </div>
+
+                <!-- Delete confirmation modal -->
+                <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <form method="POST" action="/home/delete/{{$user->id }}">
+                                @csrf
+                                @method('DELETE')
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="deleteModalLabel">Confirm Account Deletion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <h2 class="text-center mt-5">Are you sure you want to delete your account?</h2>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="submit" class="btn btn-danger">Delete</button>
+                                </div>
+                            </form>
                         </div>
                     </div>
-                
+                </div>
+
 
             </div>
         </div>

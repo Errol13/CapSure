@@ -9,7 +9,7 @@
 <div class="card-body">
 <h5>Photograpy Exhibition</h5>
 <p>Come join Alex Babineaux's Photograpy Exhibition!</p>
-<a href="#" class="btn btn-primary">Learn More</a>
+<a href="#" class="btn btn-aqua">Learn More</a>
 </div>
 </div>
 </div>
@@ -23,7 +23,7 @@
 <div class="card-body">
 <h5>30% OFF!</h5>
 <p>Get 30% OFF on your first booking.</p>
-<a href="#" class="btn btn-primary">Book Now</a>
+<a href="#" class="btn btn-aqua">Book Now</a>
 </div>
 </div>
 </div>
@@ -37,7 +37,7 @@
 <div class="card-body">
 <h5>Camera Giveaway</h5>
 <p>Are you an aspiring photographer? Then this camera might be yours.</p>
-<a href="#" class="btn btn-primary">Join Now</a>
+<a href="#" class="btn btn-aqua">Join Now</a>
 </div>
 </div>
 </div>

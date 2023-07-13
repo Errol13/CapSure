@@ -323,13 +323,19 @@ body{
 /*Setting*/
 
 .bg-setting{
-    background-color: #c6c5c7;
-    height: 88%;
-    width: 75%;
-    background-size: cover;
-    background-attachment: fixed;
-    position: absolute;
-    
+    background-color: #EFEFEF;
+}
+
+.sttng-fnt-size{
+    font-size: small;
+}
+
+.bg-tab{
+    background-color: #EFEFEF;
+}
+
+.pdng-tab{
+    padding-bottom: 145px;
 }
 
 .img-up{
@@ -344,6 +350,11 @@ body{
 .nav-pills .nav-link.active {
     background-color: #023047;
   
+}
+
+.brdr-clr-ltaqua{
+    border: solid #cccccc 1px;
+    border-radius: 1%;
 }
 
 /*Event*/
@@ -380,10 +391,6 @@ body{
     font-family: 'Caveat', serif;
   }
 
-
-
-
-
   /*Service*/
   .avatar-ser{
     width:100px;
@@ -403,6 +410,7 @@ body{
   }
     </style>
  <script src="{{ mix('js/app.js') }}"></script>
+ 
 </head>
 <body>
     <div id="app">
