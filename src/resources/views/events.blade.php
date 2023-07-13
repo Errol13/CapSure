@@ -5,7 +5,7 @@
     
 <div class="shadow-lg mt-3 mb-5 container text-center">
 <div class="card" >
-<img src="../img/pe.jpg" class="card-img-top" alt="..." style="height: 380px; background-size:cover">
+<img src="../img/pe.jpg" class="card-img-top" alt="..." style="height: 380px; background-size:auto">
 <div class="card-body">
 <h5>Photograpy Exhibition</h5>
 <p>Some representative placeholder content for the first slide.</p>
