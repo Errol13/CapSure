@@ -20,6 +20,7 @@
                     <p>Address: <b>{{$user->address}} </b></p>
                     <p>Email: <b class="email-clr">{{$user->email}}</b></p>
                     <p>Contact Number: <b> {{$user->contact}} </b></p>
+                    
                     @if($user->user_type!='Customer')
                     <p>Years Experience: <b> {{$user->year_experience}}</b> </p>
                     <!--Button for Availability -->

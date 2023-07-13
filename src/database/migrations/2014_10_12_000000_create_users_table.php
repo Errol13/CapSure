@@ -23,7 +23,7 @@ class CreateUsersTable extends Migration
             $table->string('avatar')->nullable()->default('dp-default.jpg');
             $table->string('contact')->nullable()->nullable();
             $table->string('address')->nullable()->nullable();
-            $table->string('year_experience')->nullable();
+            $table->string('year_experience')->nullable()->default('None');
             $table->rememberToken();
             $table->timestamps();
         });

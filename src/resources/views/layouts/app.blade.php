@@ -380,9 +380,7 @@ body{
     font-family: 'Caveat', serif;
   }
 
-  .carousel .carousel-item {
-  height: 550px;
-}
+
 
 
 
