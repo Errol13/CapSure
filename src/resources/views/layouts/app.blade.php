@@ -41,6 +41,7 @@
     background: url("../img/bg image.jpg") no-repeat;
     background-position: center;
     background-attachment: fixed;
+    opacity: 0.7;
 }
 
 .content{
@@ -126,6 +127,7 @@ body{
 }
 .bor2{
     border-bottom: #ffffff solid 1px;
+    background-color: #ffffff;
 }
 .lgn-mgn {
     margin-top: 60px;
@@ -356,8 +358,12 @@ body{
   opacity: 85%;
 }
 
+.grn-clr{
+    background-color:#72bf6a;
+    color: #ffffff;
+}
 .mgn-eve{
-    margin-top: 230px;
+    margin-top: 150px;
 }
 .bg-events {
     position: absolute;
@@ -366,17 +372,25 @@ body{
     left: 0;
     width: 100%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-image: url("../img/bg-events.jpg");
-    background-repeat: no-repeat;
+    background: #ffff00; 
   }
   
   .event-text{
     font-size: 71px;
     font-family: 'Caveat', serif;
   }
+
+  .carousel .carousel-item {
+  height: 550px;
+}
+
+.carousel-item img {
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    height: 550px;
+}
 
   /*Service*/
   .avatar-ser{

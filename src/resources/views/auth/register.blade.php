@@ -4,8 +4,8 @@
 <div class="container lgn-mgn">
     <div class="row justify-content-center">
         <div class="col-md-8">
-            <div class="card bor-aqua">
-                <div class="card-header text-center aq-clr fw-bold fs-3 ltr-spng bor2">{{ __('SIGN UP') }}</div>
+            <div class="card bor">
+                <div class="card-header text-center aq-clr fw-bold fs-3 ltr-spng bor2 ">{{ __('SIGN UP') }}</div>
 
                 <div class="card-body ">
                     <form method="POST" action="{{ route('register') }}">

@@ -58,7 +58,7 @@
                             </a>
                             @endif
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn loginbutton lgn-p ">
+                                <button type="submit" class="btn loginbutton col-md-9 ">
                                     {{ __('Login') }}
                                 </button>
                             </div>

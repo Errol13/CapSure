@@ -4,7 +4,7 @@
 <div class="container-fluid ">
     <div class="hero-section"></div>
     <div class="content">
-    <h1 class="fw-bolder text-center bnd-name-size brand_name">CapSure</h1>
+    <h1 class="fw-bolder text-center bnd-name-size brand_name mt-5">CapSure</h1>
     <p class=" text-center tagline">“Capture the moment surely!”</p>
     <div class=" text-left mx-5 vis text-black  ">
         <p class="mb-4 fs-3">Special occasions merit special attention.  
