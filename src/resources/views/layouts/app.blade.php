@@ -385,8 +385,7 @@ body{
 }
 
 .carousel-item img {
-    position: absolute;
-    object-fit: cover;
+    
     top: 0;
     left: 0;
     height: 550px;
