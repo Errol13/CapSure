@@ -50,6 +50,8 @@
                 <div class="carousel-inner">
                     @if ($portfolio->isEmpty())
                     <div class="carousel-item active">
+                    <div class="d-flex justify-content-center">
+
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mx-auto border-0">
@@ -58,9 +60,12 @@
                             </div>
                         </div>
                     </div>
+                    </div>
                     @else
                     @foreach ($portfolio as $index => $port)
                     <div class="carousel-item {{ $index === 0 ? 'active' : '' }}">
+                    <div class="d-flex justify-content-center">
+
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card mx-auto border-0">
@@ -68,6 +73,7 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
                     </div>
                     @endforeach
                     @endif
