@@ -10,7 +10,7 @@
             <div class="p-3 text-center "><p class="size fw-semibold">Mission</p></div>
             </div>
         <div class="col-7">
-            <div class="p-4 about_info mv">"At Capsure, our mission is to revolutionize the way people find and 
+            <div class="p-4 about_info mv text-black">"At Capsure, our mission is to revolutionize the way people find and 
                 hire photographers or photography studios for their special events. We strive to provide a comprehensive 
                 and personalized experience that simplifies the search process and ensures our clients find the ideal 
                 creative professional who can beautifully capture their unique vision. By fostering meaningful 
