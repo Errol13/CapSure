@@ -25,12 +25,14 @@
                 <li class="nav-item brdr-clr-ltaqua">
                     <a class="nav-link active" href="#profile-form" data-bs-toggle="tab">Basic Profile</a>
                 </li>
+                @if($user->user_type!="Customer")
                 <li class="nav-item mt-1 brdr-clr-ltaqua">
                     <a class="nav-link" href="#project-profile-form" data-bs-toggle="tab">Professional Details</a>
                 </li>
                 <li class="nav-item mt-1 brdr-clr-ltaqua">
                     <a class="nav-link" href="#portfolio-form" data-bs-toggle="tab">Portfolio</a>
                 </li>
+                @endif
                 <li class="nav-item mt-1 brdr-clr-ltaqua py-2">
                     <a class=" ms-3 text-decoration-none fw-bold navl-color py-4" data-bs-toggle="modal" data-bs-target="#deleteModal">Delete Account</a>
                 </li>
@@ -158,6 +160,7 @@
                     </form>
                 </div>
 
+                @if($user->user_type!="Customer")
                 <!-- Project Profile form -->
                 <div class="tab-pane fade mt-5  pdng-cntnt" id="project-profile-form">
                     <form method="POST" action="/profile/update/{{$user->id}}">
@@ -224,6 +227,7 @@
                         </div>
                     </form>
                 </div>
+                @endif
 
                 @if($user->user_type!="Customer")
                 <!-- Portfolio form -->
