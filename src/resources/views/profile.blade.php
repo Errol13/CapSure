@@ -24,7 +24,7 @@
                     @if($user->user_type!='Customer')
                     <p>Years Experience: <b> {{$user->year_experience}}</b> </p>
                     <p>Project Count: <b>{{$profile->project_count}}</b> </p>
-                    <p>Commission Fee: <b>{{$profile->fee}}</b> </p>
+                    <p>Commission Fee: <b>P{{$profile->fee}}/hr/</b> </p>
                     <!--Button for Availability -->
                     @if($profile->availability=="Available")
                     <div class="row mt-md-4">
