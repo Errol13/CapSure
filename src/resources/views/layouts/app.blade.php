@@ -98,15 +98,24 @@ body{
     text-align: center;
 }
 
+.ml-lgn{
+    margin-left: -450px;
+}
 .lgn-p{
     padding-left: 125px;
     padding-right: 125px;
 }
 
 .fg-m{
-    margin-left: 50px;
-    margin-right: 115px;
+    margin-left: -55px;
+    margin-top: -3px;
 }
+
+.remember-me-checkbox {
+        border: 2px solid #cccccc;
+        padding: 6px;
+        border-radius: 4px;
+    }
 
 .signbutton{
     background-color: #073535;
@@ -325,17 +334,11 @@ body{
 /*Setting*/
 
 .bg-setting{
-    background-color: #c6c5c7;
-    height: 88%;
-    width: 75%;
-    background-size: cover;
-    background-attachment: fixed;
-    position: absolute;
-    
+    background-color: #EFEFEF;
 }
 
 .sttng-fnt-size{
-    font-size: small;
+    font-size: smaller;
 }
 
 .bg-tab{
@@ -363,6 +366,11 @@ body{
 .nav-pills .nav-link.active {
     background-color: #023047;
   
+}
+
+.brdr-clr-ltaqua{
+    border: solid #cccccc 1px;
+    border-radius: 1%;
 }
 
 /*Event*/
