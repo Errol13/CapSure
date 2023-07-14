@@ -45,14 +45,14 @@
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
 
                                     <div class="text md start">
-                                        <label class="form-check-label rm-b" for="remember">
+                                        <label class="form-check-label rm-b sttng-fnt-size" for="remember">
                                             {{ __('Remember me') }}
                                         </label>
                                     </div>
 
                                     <div class="text md end">
                                         @if (Route::has('password.request'))
-                                        <a class="btn btn-link fg-m" href="{{ route('password.request') }}">
+                                        <a class="btn btn-link fg-m sttng-fnt-size" href="{{ route('password.request') }}">
                                             {{ __('Forgot password?') }}
                                         </a>
                                         @endif
